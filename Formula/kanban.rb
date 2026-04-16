@@ -1,17 +1,17 @@
 class Kanban < Formula
   desc "TUI kanban board for managing Claude Code tasks"
   homepage "https://github.com/markcipolla/claude-kanban"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/markcipolla/claude-kanban/releases/download/v0.1.0/kanban-v0.1.0-aarch64-apple-darwin.tar.gz"
-      sha256 "c06c1e74ae9dabdbbd88106d5718ed16395e3afba989b0f94e5e8506dfd2f854"
+      url "https://github.com/markcipolla/claude-kanban/releases/download/v0.1.1/kanban-v0.1.1-aarch64-apple-darwin.tar.gz"
+      sha256 "d299fdacd75d68f00fabce3ba70bc94a2648bdfa762d9a376e821b9514d66b01"
     end
     on_intel do
-      url "https://github.com/markcipolla/claude-kanban/releases/download/v0.1.0/kanban-v0.1.0-x86_64-apple-darwin.tar.gz"
-      sha256 "c157731b2c435ea30d1b3d0ee481bdf78b800e7134a3c581da441b5db70b44a1"
+      url "https://github.com/markcipolla/claude-kanban/releases/download/v0.1.1/kanban-v0.1.1-x86_64-apple-darwin.tar.gz"
+      sha256 "b957c4d176dc7d630e8f7fa473c972caf380eb1c568b8a08457911996de98155"
     end
   end
 
