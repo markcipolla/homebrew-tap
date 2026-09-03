@@ -5,21 +5,21 @@
 class Balance < Formula
   desc "Anthropic Messages API proxy that pools Claude subscriptions and API keys"
   homepage "https://github.com/markcipolla/balance"
-  version "0.3.3"
+  version "0.3.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/markcipolla/balance/releases/download/v0.3.3/balance_0.3.3_darwin_amd64.tar.gz"
-      sha256 "85f5709fde5d5c1646e191e661c117450436f6fd577567856b2026d650d4e796"
+      url "https://github.com/markcipolla/balance/releases/download/v0.3.4/balance_0.3.4_darwin_amd64.tar.gz"
+      sha256 "5c5770015955b01016bd83314821721fc5041114ebeb10358fc303ff615f7fe0"
 
       define_method(:install) do
         bin.install "balance"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/markcipolla/balance/releases/download/v0.3.3/balance_0.3.3_darwin_arm64.tar.gz"
-      sha256 "d0521f5f4093fc4f9864606fa63b41af55562ed5140af74eb61441013accb07b"
+      url "https://github.com/markcipolla/balance/releases/download/v0.3.4/balance_0.3.4_darwin_arm64.tar.gz"
+      sha256 "b64668abd36f70c8adfe9e5bb20127723e01ced5f1138f8cda9dee4ccb682b7e"
 
       define_method(:install) do
         bin.install "balance"
@@ -29,15 +29,15 @@ class Balance < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/markcipolla/balance/releases/download/v0.3.3/balance_0.3.3_linux_amd64.tar.gz"
-      sha256 "a049d22bc49281603a6192ae500fd3d23e885de7a0726e14543dd566a8e812cb"
+      url "https://github.com/markcipolla/balance/releases/download/v0.3.4/balance_0.3.4_linux_amd64.tar.gz"
+      sha256 "c8c2dd25a1f7e58f730aea6d32d632a15c067d90e92b9d49706ad4bd9b11755d"
       define_method(:install) do
         bin.install "balance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/markcipolla/balance/releases/download/v0.3.3/balance_0.3.3_linux_arm64.tar.gz"
-      sha256 "3d1db23fd9c2b10a45f8b30fd1db23dcb0322fe67a3a5b5b99a412106ce8709d"
+      url "https://github.com/markcipolla/balance/releases/download/v0.3.4/balance_0.3.4_linux_arm64.tar.gz"
+      sha256 "b29093acddcf7e7a11f427d2d5cb87915ba774c184c1cd91ec10d8711417cc5d"
       define_method(:install) do
         bin.install "balance"
       end
@@ -45,6 +45,6 @@ class Balance < Formula
   end
 
   test do
-    assert_match "balance 0.3.3", shell_output("#{bin}/balance --version")
+    assert_match "balance 0.3.4", shell_output("#{bin}/balance --version")
   end
 end
