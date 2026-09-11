@@ -1,17 +1,17 @@
 class Worktrees < Formula
   desc "Per-worktree port and Postgres allocation for multi-worktree dev tools"
   homepage "https://github.com/markcipolla/worktrees"
-  url "https://github.com/markcipolla/worktrees/archive/4976dc92863cefce82eb8624558ccabca6c4650d.tar.gz"
-  version "0.0.0-4976dc9"
-  sha256 "1c622f90ffc87a13fbb58c860e3afecb26df203a99c7da0f7af2c25f6ae97476"
+  url "https://github.com/markcipolla/worktrees/archive/6fdc8070e313d8f2a376e7fededb9f5e4352140e.tar.gz"
+  version "0.0.0-6fdc807"
+  sha256 "ea4ec48c2a1246a44bb849247f492ea7c396fe0f37ea1fab4b397b2ec70e48ef"
 
   depends_on "python@3.13"
 
   def install
-    bin.install "worktree-env"
+    bin.install "worktrees"
   end
 
   test do
-    assert_match "worktree-env", shell_output("#{bin}/worktree-env --help")
+    assert_match "worktrees", shell_output("#{bin}/worktrees --help")
   end
 end
