@@ -1,7 +1,7 @@
 # This file is written by markcipolla/transcribe's release workflow. Do not edit.
 cask "transcribe" do
-  version "0.2.0"
-  sha256 "fa8ddb9eb5a497f1e82d3a2505fc12902d147c0c969a63546360666a46391d79"
+  version "0.2.2"
+  sha256 "302f21e5f83130e037cb081af6f77063ab94fb471696a1882fe8c7fa07ea2c06"
 
   url "https://github.com/markcipolla/transcribe/releases/download/v#{version}/Transcribe-#{version}.zip"
   name "Transcribe"
