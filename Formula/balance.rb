@@ -11,7 +11,7 @@ class Balance < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/markcipolla/balance/releases/download/v1.4.1/balance_1.4.1_darwin_amd64.tar.gz"
-      sha256 "2495c219925066e72d18666cd1ccd3871f81a32cda46246179de272608f4a638"
+      sha256 "0a6fb6ba3fe69687b7461ebef879753d59f311dc7cf471eeec7477ab1c7fffde"
 
       define_method(:install) do
         bin.install "balance"
@@ -19,7 +19,7 @@ class Balance < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/markcipolla/balance/releases/download/v1.4.1/balance_1.4.1_darwin_arm64.tar.gz"
-      sha256 "51d2df0dec5be48751cc488c56664a6e52b8255ede5ffe1896b7ae63017a3d64"
+      sha256 "6f7ea5a5fc3da251677fce41bda982581a88bc120132afdc4df0d73332d1b863"
 
       define_method(:install) do
         bin.install "balance"
@@ -30,14 +30,14 @@ class Balance < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/markcipolla/balance/releases/download/v1.4.1/balance_1.4.1_linux_amd64.tar.gz"
-      sha256 "936ebeb5297f4d08814941aa4f588cd0ea5479a4fffe391731c43f4ad19e1c27"
+      sha256 "cba45b2b9abdb3ed4398d4cbdc4289629fa3ba960d6341371ebb180c5c99b25b"
       define_method(:install) do
         bin.install "balance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/markcipolla/balance/releases/download/v1.4.1/balance_1.4.1_linux_arm64.tar.gz"
-      sha256 "80460e45dd5589a78449c4bbab67e61b7eb3ab005007c13c066bfdb228cc1b2d"
+      sha256 "317d5d231304eb9105996b679afb13b974eb82a1fb2bbc7b9fd1ec37a33c7b6d"
       define_method(:install) do
         bin.install "balance"
       end
