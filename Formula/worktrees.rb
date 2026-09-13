@@ -1,9 +1,9 @@
 class Worktrees < Formula
   desc "Per-worktree port and Postgres allocation for multi-worktree dev tools"
   homepage "https://github.com/markcipolla/worktrees"
-  url "https://github.com/markcipolla/worktrees/archive/3d2b5974c3009a91980d72bd9560c521cc1ec727.tar.gz"
-  version "0.0.0-3d2b597"
-  sha256 "092ea85135f2af20aa6f029043a0e0a676d8e4442a84ac4b95f792a9369bd199"
+  url "https://github.com/markcipolla/worktrees/archive/bb52b5c357999befff5d49c57af333792170b87b.tar.gz"
+  version "0.0.0-bb52b5c"
+  sha256 "abb8c1767d523cfb19387c08b34f95e03e97210c1e8716210b2ded9f3c6fa01d"
 
   depends_on "python@3.13"
 
