@@ -1,8 +1,8 @@
 class Treeline < Formula
   desc "Git worktree TUI with Linear cards, embedded Claude Code, and staging"
   homepage "https://github.com/markcipolla/treeline"
-  url "https://github.com/markcipolla/treeline/archive/refs/tags/v0.17.14.tar.gz"
-  sha256 "bb74380e14dfe14d8d4087b4382498d39ca72e5dd8c06100822c0e042178ad61"
+  url "https://github.com/markcipolla/treeline/archive/refs/tags/v0.17.15.tar.gz"
+  sha256 "2b7c8643d0389adf40b50e2574a411861a9572732d21fe3a905d839118601ab9"
 
   depends_on "go" => :build
   depends_on "markcipolla/tap/balance"
